@@ -1,9 +1,14 @@
+group = 'com.jess.ui'
+version = '0.1'
+
+
 buildscript {
     repositories {
+        mavenLocal()
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.4'
+        classpath 'com.android.tools.build:gradle:0.4.3'
     }
 }
 apply plugin: 'android-library'
@@ -11,6 +16,8 @@ apply plugin: 'android-library'
 dependencies {
     compile fileTree(dir: 'libs', include: '*.jar')
 }
+
+
 
 android {
     compileSdkVersion 4
